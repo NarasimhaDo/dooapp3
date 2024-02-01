@@ -9,7 +9,7 @@ Pod::Spec.new do |spec|
   spec.homepage     = "https://github.com/NarasimhaDo/dooapp3"
   spec.license      = "MIT"
   spec.author             = { "Narasimha" => "narasimhududuvvvuru@gmail.com" }
-  spec.platform     = :ios, "13.1"
+  spec.platform     = :ios, "11.0"
   spec.source       = { :git => "https://github.com/NarasimhaDo/dooapp3.git", :tag => spec.version.to_s  }
   spec.source_files  = "dooapp3/**/*.{swift}"
   spec.swift_version = "5.0"
