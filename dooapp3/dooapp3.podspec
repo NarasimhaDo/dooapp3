@@ -1,23 +1,22 @@
 
 
-Pod::Spec.new do |spec|
+Pod::Spec.new do |s|
 
-  spec.name         = "dooapp3"
-  spec.version      = "1.0.0"
-  spec.summary      = "sample application."
-  spec.description  = "it uses random strings"
-  spec.homepage     = "https://github.com/NarasimhaDo/dooapp3"
-  spec.license      = "MIT"
-  spec.author             = { "Narasimha" => "narasimhududuvvvuru@gmail.com" }
-  spec.platform     = :ios, "11.0"
-  spec.source       = { :git => "https://github.com/NarasimhaDo/dooapp3.git", :tag => spec.version.to_s  }
-  spec.source_files  = "dooapp3/**/*.{swift}"
-  spec.swift_version = "5.0"
-    #spec.dependency "Socket.IO-Client-Swift", "~> 16.1.0" , "Starscream", "~> 4.0.6"
-  #spec.dependency "Starscream", "~> 4.0.6"
-   spec.ios.frameworks = ['UIKit', 'Foundation']
-   spec.dependency 'Socket.IO-Client-Swift', '~> 16.1'
-    spec.dependency 'Starscream', '~> 4.0'
-  
-  
+s.name         = "dooapp3"
+s.module_name  = "SocketIO"
+s.version      = "1.0.0"
+s.summary      = "sample application."
+s.description  = "it uses random strings"
+s.homepage     = "https://github.com/NarasimhaDo/dooapp3"
+s.license      = "MIT"
+s.author             = { "Narasimha" => "narasimhududuvvvuru@gmail.com" }
+s.platform     = :ios, '10.0'cd
+s.requires_arc = true
+s.source       = { :git => "https://github.com/NarasimhaDo/dooapp3.git", :tag => s.version.to_s ,:submodules => true }
+#s.dependency "Socket.IO-Client-Swift", "~> 16.1"
+s.dependency "Starscream"
+s.source_files  = "dooapp3/**/*.{swift}"
+s.swift_version = "5.0"
+s.dependency 'Socket.IO-Client-Swift'
+
 end
