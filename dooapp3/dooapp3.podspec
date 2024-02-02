@@ -10,7 +10,7 @@ s.description  = "it uses random strings"
 s.homepage     = "https://github.com/NarasimhaDo/dooapp3"
 s.license      = "MIT"
 s.author             = { "Narasimha" => "narasimhududuvvvuru@gmail.com" }
-s.platform     = :ios, '10.0'cd
+s.platform     = :ios, '10.0'
 s.requires_arc = true
 s.source       = { :git => "https://github.com/NarasimhaDo/dooapp3.git", :tag => s.version.to_s ,:submodules => true }
 #s.dependency "Socket.IO-Client-Swift", "~> 16.1"
